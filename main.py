@@ -1,18 +1,14 @@
-import math
-a = float(input("Enter a"))
-b = float(input("Enter b"))
-c = float(input("Enter c"))
-d = (b**2) - (4*a*c)
-
-if d<0 :
-     print("Roots are imagenary" )
-elif d==0 :
-     sq= math.sqrt(d)
-     root = (-b - sq)/2*a
-     root2 = (-b + sq)/2*a
-     print("Roots are real and equal", root, root2)
-else:
-     sq= math.sqrt(d)
-     root = (-b - sq)/2*a
-     root2 = (-b + sq)/2*a
-     print("Roots are real and unequal", root, root2)
+import random
+l = [1,2,3,4,5,6,7,8,9,10]
+b= random.choice(l)
+while(True):
+     a= int(input("enter the number between 1 to 10"))
+     if(a>b):
+        print("small number please🙃", end=" ");
+        print("try again⬇️");
+     elif(a<b):
+        print("😅Greater number please");
+        print("TRY AGAIN⬆️");
+     else:
+        print("💯Correct guess💯");
+        break;        
